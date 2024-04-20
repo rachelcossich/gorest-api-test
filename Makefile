@@ -10,7 +10,7 @@ clean: allure_clean
 	rm -rf log* *_output.xml report* results*
 
 install:
-	pip install -r -u requirements.txt
+	pip install -r requirements.txt
 
 run_test:
 	robot --listener allure_robotframework:$(ALLURE_FOLDER) \
