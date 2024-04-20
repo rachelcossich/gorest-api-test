@@ -21,6 +21,8 @@ jobs:
         continue-on-error: true
         env:
           FORCE_COLOR: 2
+          BASE_URL: ${{ secrets.BASE_URL }}
+          TOKEN: ${{ secrets.TOKEN }}
 
       - name: Upload Allure report
         uses: actions/upload-artifact@v1
@@ -43,6 +45,8 @@ jobs:
         continue-on-error: true
         env:
           FORCE_COLOR: 2
+          BASE_URL: ${{ secrets.BASE_URL }}
+          TOKEN: ${{ secrets.TOKEN }}
 
       - name: Upload Allure report
         uses: actions/upload-artifact@v1
