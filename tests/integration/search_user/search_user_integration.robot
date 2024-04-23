@@ -7,14 +7,14 @@ Test Tags       @search_user
 
 *** Test Cases ***
  CT001 Search all users successfully with token
-  [Tags]    integration   
+  [Tags]    integration    my_test
   Search User
   Should Be Equal As Strings    ${response.status_code}        200
   Set Test Variable             ${_id}   ${response.json()[0]["id"]}
   Should Be Equal As Strings    ${response.json()[0]["id"]}    ${_id}
 
  CT002 Search user in the URL and successfully with token
-  [Tags]    integration   
+  [Tags]    integration    my_test
   Search User    6860682
   Should Be Equal As Strings    ${response.status_code}       200
   Should Be Equal As Strings    ${response.json()["id"]}      6860682

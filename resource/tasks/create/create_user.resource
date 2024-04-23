@@ -7,8 +7,8 @@ Create User
     [Arguments]         ${file} 
 
     ${headers}          Create Dictionary
-    ...                 Content-Type=aplication/json
-    ...                 Accept=aplication/json
+    ...                 Content-Type=application/json
+    ...                 Accept=application/json
     ...                 Authorization=Bearer ${TOKEN}
     
     ${DATA}             Load Json From File	        ${CURDIR}/${file}

@@ -7,7 +7,7 @@ Test Tags       @create_user
 
 *** Test Cases ***
  CT001 Create user successfully
-   [Tags]    integration
+   [Tags]    integration    my_test
    Create User      ../../../resource/data/create_user.json
    Should Be Equal As Strings    ${response.status_code}    201
 

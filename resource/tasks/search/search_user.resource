@@ -7,8 +7,8 @@ Search User
     [Arguments]         ${user}=${EMPTY}
 
     ${headers}          Create Dictionary
-    ...                 Content-Type=aplication/json
-    ...                 Accept=aplication/json
+    ...                 Content-Type=application/json
+    ...                 Accept=application/json
     ...                 Authorization=Bearer ${TOKEN}
     
     Create Session      goRest              ${BASE_URL}     verify=True

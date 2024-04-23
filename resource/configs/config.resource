@@ -14,5 +14,5 @@ ${LONG_TIMEOUT}         60
 ${LOG_LEVEL}            DEBUG
 
 #SENSITIVE DATA
-${BASE_URL}             ${BASE_URL} 
+${BASE_URL}             ${BASE_URL}
 ${TOKEN}                ${TOKEN}
